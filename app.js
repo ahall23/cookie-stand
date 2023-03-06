@@ -40,17 +40,33 @@ const seattle = {
     return this.cookiesPerHour;
   },
 };
-seattle.getCookies;
-  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArray = document.querySelector('.outputSeattle')
-    for(let i = 0; i < hoursDemo.length; i++) {
-        //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
-        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-        hoursArray.append(variable);
-    },
-
+seattle.getCookies();
+let hoursDemo = [
+  "6am",
+  "7am",
+  "8am",
+  "9am",
+  "10am",
+  "11am",
+  "12pm",
+  "1pm",
+  "2pm",
+  "3pm",
+  "4pm",
+  "5pm",
+  "6pm",
+  "7pm",
+];
+let cookieDemo = [
+  152, 265, 202, 353, 227, 221, 202, 378, 171, 309, 215, 189, 189, 385,
+];
+let hourssArray = document.querySelector(".outputSeattle");
+for (let i = 0; i < hoursDemo.length; i++) {
+  // hoursDemo[i].innerHTML;
+  let variable = document.createElement("li");
+  variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  hourssArray.append(variable);
+}
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -95,15 +111,15 @@ const tokyo = {
 };
 
 tokyo.getCookies;
-  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArray = document.querySelector('.outputTokyo')
-    for(let i = 0; i < hoursDemo.length; i++) {
-        //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
-        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-        hoursArray.append(variable);
-    },
+// let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+// let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+let hoursArray1 = document.querySelector(".outputTokyo");
+for (let i = 0; i < hoursDemo.length; i++) {
+  //hoursDemo[i].innerHTML
+  let variable = document.createElement("li");
+  variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  hoursArray1.append(variable);
+}
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -147,15 +163,15 @@ const dubai = {
   },
 };
 dubai.getCookies;
-  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArray = document.querySelector('.outputDubai')
-    for(let i = 0; i < hoursDemo.length; i++) {
-        //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
-        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-        hoursArray.append(variable);
-    },
+// let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+// let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+let hoursArray2 = document.querySelector(".outputDubai");
+for (let i = 0; i < hoursDemo.length; i++) {
+  //hoursDemo[i].innerHTML
+  let variable = document.createElement("li");
+  variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  hoursArray2.append(variable);
+}
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -204,15 +220,14 @@ const paris = {
   },
 };
 paris.getCookies;
-  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArray = document.querySelector('.outputParis')
-    for(let i = 0; i < hoursDemo.length; i++) {
-        //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
-        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-        hoursArray.append(variable);
-    },
+
+let hoursArray3 = document.querySelector(".outputParis");
+for (let i = 0; i < hoursDemo.length; i++) {
+  //hoursDemo[i].innerHTML
+  let variable = document.createElement("li");
+  variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  hoursArray3.append(variable);
+}
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -255,13 +270,13 @@ const lima = {
   },
 };
 
-lima.getCookies;
-  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
-    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
-    let hoursArray = document.querySelector('.outputLima')
-    for(let i = 0; i < hoursDemo.length; i++) {
-        //hoursDemo[i].innerHTML
-        let variable = document.createElement("li");
-        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-        hoursArray.append(variable);
-    },
+lima.getCookies();
+// let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+// let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+let hoursArray4 = document.querySelector(".outputLima");
+for (let i = 0; i < hoursDemo.length; i++) {
+  //hoursDemo[i].innerHTML
+  let variable = document.createElement("li");
+  variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  hoursArray4.append(variable);
+}

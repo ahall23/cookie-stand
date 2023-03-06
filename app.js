@@ -40,7 +40,7 @@ const seattle = {
     return this.cookiesPerHour;
   },
 };
-("use strict");
+
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
   // 0 >= random #  <= 1  * limit
@@ -82,7 +82,7 @@ const tokyo = {
     return this.cookiesPerHour;
   },
 };
-("use strict");
+
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
   // 0 >= random #  <= 1  * limit
@@ -124,7 +124,7 @@ const dubai = {
     return this.cookiesPerHour;
   },
 };
-("use strict");
+
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
   // 0 >= random #  <= 1  * limit
@@ -166,10 +166,9 @@ const paris = {
     return this.cookiesPerHour;
   },
 };
-("use strict");
+
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
-  // 0 >= random #  <= 1  * limit
 }
 
 const lima = {

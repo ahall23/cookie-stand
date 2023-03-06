@@ -40,6 +40,17 @@ const seattle = {
     return this.cookiesPerHour;
   },
 };
+seattle.getCookies;
+  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+    let hoursArray = document.querySelector('.outputSeattle')
+    for(let i = 0; i < hoursDemo.length; i++) {
+        //hoursDemo[i].innerHTML
+        let variable = document.createElement("li");
+        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+        hoursArray.append(variable);
+    },
+
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -83,6 +94,17 @@ const tokyo = {
   },
 };
 
+tokyo.getCookies;
+  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+    let hoursArray = document.querySelector('.outputTokyo')
+    for(let i = 0; i < hoursDemo.length; i++) {
+        //hoursDemo[i].innerHTML
+        let variable = document.createElement("li");
+        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+        hoursArray.append(variable);
+    },
+
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
   // 0 >= random #  <= 1  * limit
@@ -124,6 +146,21 @@ const dubai = {
     return this.cookiesPerHour;
   },
 };
+dubai.getCookies;
+  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+    let hoursArray = document.querySelector('.outputDubai')
+    for(let i = 0; i < hoursDemo.length; i++) {
+        //hoursDemo[i].innerHTML
+        let variable = document.createElement("li");
+        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+        hoursArray.append(variable);
+    },
+
+function getRandom(max, min) {
+  return Math.ceil(Math.random() * (max - min) + min);
+  // 0 >= random #  <= 1  * limit
+}
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -166,6 +203,16 @@ const paris = {
     return this.cookiesPerHour;
   },
 };
+paris.getCookies;
+  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+    let hoursArray = document.querySelector('.outputParis')
+    for(let i = 0; i < hoursDemo.length; i++) {
+        //hoursDemo[i].innerHTML
+        let variable = document.createElement("li");
+        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+        hoursArray.append(variable);
+    },
 
 function getRandom(max, min) {
   return Math.ceil(Math.random() * (max - min) + min);
@@ -207,3 +254,14 @@ const lima = {
     return this.cookiesPerHour;
   },
 };
+
+lima.getCookies;
+  let hoursDemo = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
+    let cookieDemo = [152,265,202,353,227,221,202,378,171,309,215,189,189,385];
+    let hoursArray = document.querySelector('.outputLima')
+    for(let i = 0; i < hoursDemo.length; i++) {
+        //hoursDemo[i].innerHTML
+        let variable = document.createElement("li");
+        variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+        hoursArray.append(variable);
+    },

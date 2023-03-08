@@ -36,7 +36,8 @@ function cookstandLocation(min, max, avg, location, hours) {
     for (let i = 0; i < this.hoursOfOperation.length; i++) {
       console.log("seattle avg cookies/sale", this.avg);
       console.log("seattle avg customers/hour", this.customersPerHour());
-      this.cookiesPerHour.push(Math.ceil(this.avg * this.customersPerHour()));
+      let cookiesSold = Math.ceil(this.avg * this.customersPerHour());
+      this.cookiesPerHour.push(cookiesSold);
     }
     return this.cookiesPerHour;
   };

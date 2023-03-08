@@ -31,20 +31,36 @@ function cookstandLocation(min, max, avg, location, hours) {
     console.log(this.min);
     return getRandom(this.max, this.min);
   };
+
   stand.cookiesPerHour = [];
+  console.log("test");
+  let total = 0;
+
   stand.getCookies = function () {
     for (let i = 0; i < this.hoursOfOperation.length; i++) {
       console.log("seattle avg cookies/sale", this.avg);
       console.log("seattle avg customers/hour", this.customersPerHour());
       let cookiesSold = Math.ceil(this.avg * this.customersPerHour());
       this.cookiesPerHour.push(cookiesSold);
+
+      for (let i = 0; i < this.cookiesPerHour.length; i++) {
+        total += this.cookiesPerHour[i];
+        console.log(`${total} flowers`);
+      }
     }
+
     return this.cookiesPerHour;
   };
+
   stand.render = function () {
+    let cities = document.createElement("th");
     let time = document.querySelectorAll(".time");
     let table = document.querySelector("#wholeTable");
     let trDemo = document.createElement("tr");
+    // let = document.createElement;
+
+    cities.innerHTML = location;
+    trDemo.append(cities);
     table.append(trDemo);
     for (let i = 0; i < this.hoursOfOperation.length; i++) {
       let localeTD = document.createElement("td");
@@ -52,15 +68,14 @@ function cookstandLocation(min, max, avg, location, hours) {
       localeTD.innerHTML += this.cookiesPerHour[i];
       trDemo.append(localeTD);
     }
-
-    // for (let i = 0; i < this.hoursOfOperation.length; i++) {
-    //   //hoursDemo[i].innerHTML
-    //   let variable = document.createElement("td");
-    //   variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
-    //   hoursArray4.append(variable);
-    // }
   };
   return stand;
+  // for (let i = 0; i < this.hoursOfOperation.length; i++) {
+  //   //hoursDemo[i].innerHTML
+  //   let variable = document.createElement("td");
+  //   variable.innerHTML = `${hoursDemo[i]}: ${cookieDemo[i]} cookies`;
+  // }
+  //   hoursArray4.append(variable);
 }
 
 let Seattle = new cookstandLocation(23, 65, 6.3, "Seattle");

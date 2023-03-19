@@ -27,25 +27,25 @@ function cookstandLocation(min, max, avg, location, hours) {
     "7pm",
   ];
   stand.customersPerHour = function () {
-    console.log(this.max);
-    console.log(this.min);
+    // console.log(this.max);
+    // console.log(this.min);
     return getRandom(this.max, this.min);
   };
 
   stand.cookiesPerHour = [];
-  console.log("test");
+  // console.log("test");
   let total = 0;
 
   stand.getCookies = function () {
     for (let i = 0; i < this.hoursOfOperation.length; i++) {
-      console.log("seattle avg cookies/sale", this.avg);
-      console.log("seattle avg customers/hour", this.customersPerHour());
+      // console.log("seattle avg cookies/sale", this.avg);
+      // console.log("seattle avg customers/hour", this.customersPerHour());
       let cookiesSold = Math.ceil(this.avg * this.customersPerHour());
       this.cookiesPerHour.push(cookiesSold);
 
       for (let i = 0; i < this.cookiesPerHour.length; i++) {
         total += this.cookiesPerHour[i];
-        console.log(`${total} flowers`);
+        // console.log(`${total} flowers`);
       }
     }
 
@@ -57,18 +57,26 @@ function cookstandLocation(min, max, avg, location, hours) {
     let time = document.querySelectorAll(".time");
     let table = document.querySelector("#wholeTable");
     let trDemo = document.createElement("tr");
+    let total = document.createElement("td");
+
     // let = document.createElement;
+    let dailyTotal = 0;
 
     cities.innerHTML = location;
     trDemo.append(cities);
     table.append(trDemo);
     for (let i = 0; i < this.hoursOfOperation.length; i++) {
       let localeTD = document.createElement("td");
-      console.log(this.cookiesPerHour);
+      // console.log(this.cookiesPerHour);
       localeTD.innerHTML += this.cookiesPerHour[i];
+      dailyTotal = dailyTotal + this.cookiesPerHour[i];
       trDemo.append(localeTD);
     }
+    total.innerHTML = dailyTotal;
+    trDemo.append(total);
+    console.log("dailyTotal", dailyTotal);
   };
+
   return stand;
   // for (let i = 0; i < this.hoursOfOperation.length; i++) {
   //   //hoursDemo[i].innerHTML
